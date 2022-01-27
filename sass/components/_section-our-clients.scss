@@ -1,0 +1,25 @@
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition: color $transition-time $time-function,
+    border-color $transition-time $time-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+.clients__icon {
+  fill: currentColor;
+}
