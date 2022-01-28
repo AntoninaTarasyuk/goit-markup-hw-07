@@ -1,0 +1,25 @@
+.logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $accent-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+.logo__decor {
+  color: $title-text-color;
+}
+.logo__decor--footer {
+  color: $dark-bg-text-color;
+}
+.logo--footer {
+  padding: 0;
+  margin-bottom: 20px;
+}

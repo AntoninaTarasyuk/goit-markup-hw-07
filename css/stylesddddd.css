@@ -83,16 +83,11 @@ img {
 } */
 
 /* Шапка сайта */
-.header {
+/* .header {
   border-bottom: 1px solid #ececec;
-}
-.main-nav,
-.nav {
-  display: flex;
-  align-items: center;
-}
+} */
 
-.logo {
+/* .logo {
   display: block;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -102,12 +97,18 @@ img {
   color: var(--accent-color);
   text-decoration: none;
 }
-.logo-decor {
+.logo__decor {
   color: var(--title-text-color);
 }
 .logo:hover,
 .logo:focus {
   text-decoration: none;
+} */
+
+.main-nav,
+.nav {
+  display: flex;
+  align-items: center;
 }
 .site-nav {
   margin-left: 93px;
@@ -201,7 +202,7 @@ ul .current {
   text-transform: uppercase;
 }
 /* Кнопка на баннере */
-/* .main-btn {
+/* .btn-main {
   padding: 10px 32px;
 
   min-width: 200px;
@@ -221,8 +222,8 @@ ul .current {
 
   transition: background-color var(--transition-time) var(--time-function);
 }
-.main-btn:hover,
-.main-btn:focus {
+.btn-main:hover,
+.btn-main:focus {
   background-color: #188ce8;
 } */
 
@@ -371,14 +372,14 @@ ul .current {
 
 /* Страница портфолио */
 /* Кнопки страницы портфолио */
-.filter-item:not(:first-child) {
+/* .filter__item:not(:first-child) {
   margin-left: 8px;
 }
 .filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-}
+} */
 /* .btn {
   padding: 6px 22px;
 
@@ -407,38 +408,39 @@ ul .current {
 } */
 
 /* Галерея страницы портфолио */
-.works {
+/* .gallery {
+  display: flex;
   flex-wrap: wrap;
 }
-.work-item {
+.gallery__item {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.work-item:nth-child(3n) {
+.gallery__item:nth-child(3n) {
   margin-right: 0;
 }
-.work-item:nth-last-child(-n + 3) {
+.gallery__item:nth-last-child(-n + 3) {
   margin-bottom: 0;
-}
-.work-link {
+} */
+
+/* .project {
   display: block;
   text-decoration: none;
 
   transition: box-shadow var(--transition-time) var(--time-function);
 }
-.work-link:hover,
-.work-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+.project__content {
+  position: relative;
+  overflow: hidden;
 }
-.work-frame {
+.project__frame {
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
-.work-title {
+.project__title {
   margin-top: 0;
   margin-bottom: 4px;
   font-size: 18px;
@@ -446,17 +448,13 @@ ul .current {
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
-.work-name {
+.project__name {
   margin: 0;
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
 }
-.work-description-block {
-  position: relative;
-  overflow: hidden;
-}
-.work-description {
+.project__description {
   position: absolute;
   top: 0;
   margin: 0;
@@ -471,66 +469,69 @@ ul .current {
   transform: translateY(100%);
   transition: transform var(--transition-time) var(--time-function);
 }
-.work-link:hover .work-description,
-.work-link:focus .work-description {
-  transform: translateY(0);
+.project:hover,
+.project:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+.project:hover .project__description,
+.project:focus .project__description {
+  transform: translateY(0);
+} */
 
 /* Подвал сайта */
-.footer {
+/* .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--footer-bg-color);
 }
-.footer .container {
+.container--footer {
   display: flex;
   align-items: baseline;
-}
-.footer .logo {
+}  */
+/* .logo--footer {
   padding: 0;
   margin-bottom: 20px;
 }
-.logo-decor-footer {
+.logo__decor--footer {
   color: var(--dark-bg-text-color);
-}
-.address-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+} */
+/* .address {
+  display: block;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
 }
-.address-item:not(:first-child) {
+.address__item:not(:first-child) {
   margin-top: 9px;
 }
-.address-link {
+.address__link {
   text-decoration: none;
   color: var(--dark-bg-text-color);
 
   transition: color var(--transition-time) var(--time-function);
 }
-.address-link:hover,
-.address-link:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--accent-color);
 }
-.contact {
+.address__link--contact {
   color: rgba(255, 255, 255, 0.6);
-}
-.join {
+} */
+/* .footer__join {
   margin-left: 70px;
   margin-right: 93px;
 }
-.footer-title {
+.footer__title {
   margin: 0 0 20px 0;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   color: var(--dark-bg-text-color);
   text-transform: uppercase;
-}
-.join-item:not(:last-child) {
+} */
+/* .join-item:not(:last-child) {
   margin-right: 10px;
 }
 .join-item .social-link {
@@ -542,14 +543,14 @@ ul .current {
 .join-item .social-link:hover,
 .join-item .social-link:focus {
   background-color: var(--accent-color);
-}
+} */
 
 /* Форма подписки на рассылку */
-.subscribe-form {
+/* .subscribe-form {
   display: flex;
   align-items: center;
 }
-.subscribe-input {
+.subscribe-form__input {
   min-width: 358px;
   padding: 15px 16px;
   color: var(--dark-bg-text-color);
@@ -558,19 +559,19 @@ ul .current {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
-.subscribe-input::placeholder {
+.subscribe-form__input::placeholder {
+  margin-right: 12px;
   font-size: 16;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
-.subscribe-form .main-btn {
+.btn-main--subscribe-form {
   display: inline-flex;
   align-items: center;
-  margin-left: 12px;
 }
-.send-icon {
+.btn-main__send-icon {
   margin-left: 10px;
-}
+} */
 
 /* Модальное окно */
 .backdrop {
@@ -609,7 +610,7 @@ ul .current {
 }
 
 /* Кнопка закрытия модального окна */
-.close-btn {
+/* .btn-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -629,13 +630,13 @@ ul .current {
 
   transition: color var(--transition-time) var(--time-function);
 }
-.close-icon {
+.btn-close__icon {
   fill: currentColor;
 }
-.close-btn:hover,
-.close-btn:focus {
+.btn-close:hover,
+.btn-close:focus {
   color: var(--accent-color);
-}
+} */
 
 /* Заголовок модального окна */
 .modal-title {

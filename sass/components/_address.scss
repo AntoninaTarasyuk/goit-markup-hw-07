@@ -1,0 +1,24 @@
+.address {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.address__item:not(:first-child) {
+  margin-top: 9px;
+}
+.address__link {
+  text-decoration: none;
+  color: var(--dark-bg-text-color);
+
+  transition: color var(--transition-time) var(--time-function);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.address__link--contact {
+  color: rgba(255, 255, 255, 0.6);
+}

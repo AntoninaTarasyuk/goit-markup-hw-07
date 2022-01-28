@@ -1,4 +1,4 @@
-.main-btn {
+.btn-main {
   padding: 10px 32px;
 
   min-width: 200px;
@@ -22,4 +22,11 @@
   &:focus {
     background-color: #188ce8;
   }
+}
+.btn-main--subscribe-form {
+  display: inline-flex;
+  align-items: center;
+}
+.btn-main__send-icon {
+  margin-left: 10px;
 }
