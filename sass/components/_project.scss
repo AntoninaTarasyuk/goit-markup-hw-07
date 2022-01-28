@@ -3,6 +3,12 @@
   text-decoration: none;
 
   transition: box-shadow $transition-time $time-function;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 .project__content {
   position: relative;
@@ -26,7 +32,7 @@
   margin: 0;
   font-size: 16px;
   line-height: 1.88;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 .project__description {
   position: absolute;
@@ -42,13 +48,9 @@
 
   transform: translateY(100%);
   transition: transform $transition-time $time-function;
-}
-.project:hover,
-.project:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.project:hover .project__description,
-.project:focus .project__description {
-  transform: translateY(0);
+
+  .project:hover &,
+  .project:focus & {
+    transform: translateY(0);
+  }
 }

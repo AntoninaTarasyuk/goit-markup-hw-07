@@ -1,0 +1,43 @@
+.agreement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.agreement__field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.agreement__lable {
+  font-size: 14px;
+  line-height: 1.71;
+  margin-left: 7px;
+}
+.agreement__icon {
+  width: 16px;
+  height: 15px;
+  border: 2px solid $title-text-color;
+  border-radius: 3px;
+  background-color: $primary-bg-color;
+
+  transition: border-color $transition-time $time-function,
+    background-color $transition-time $time-function;
+}
+.agreement__checkbox:checked ~ .agreement__icon {
+  border-color: $accent-color;
+  background-color: $accent-color;
+}
+.agreement__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

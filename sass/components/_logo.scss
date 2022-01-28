@@ -12,14 +12,14 @@
   &:focus {
     text-decoration: none;
   }
+  &--footer {
+    padding: 0;
+    margin-bottom: 20px;
+  }
 }
 .logo__decor {
   color: $title-text-color;
-}
-.logo__decor--footer {
-  color: $dark-bg-text-color;
-}
-.logo--footer {
-  padding: 0;
-  margin-bottom: 20px;
+  &--footer {
+    color: $dark-bg-text-color;
+  }
 }

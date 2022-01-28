@@ -22,10 +22,10 @@
   &:focus {
     background-color: #188ce8;
   }
-}
-.btn-main--subscribe-form {
-  display: inline-flex;
-  align-items: center;
+  &--subscribe-form {
+    display: inline-flex;
+    align-items: center;
+  }
 }
 .btn-main__send-icon {
   margin-left: 10px;
