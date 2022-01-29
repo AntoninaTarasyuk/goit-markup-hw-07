@@ -1,10 +1,10 @@
 @import "./base/modern-normalize";
 @import "./utils/variables";
-@import "./components/body";
-@import "./components/conteiner";
 @import "./utils/list";
-@import "./components/image";
+@import "./components/body";
 @import "./components/section";
+@import "./components/conteiner";
+@import "./components/image";
 @import "./components/logo";
 @import "./components/button-main";
 @import "./components/button";
@@ -17,9 +17,7 @@
 @import "./components/activity";
 @import "./components/our-team";
 @import "./components/clients";
-@import "./components/filter-buttons";
-@import "./components/gallery";
-@import "./components/project";
+@import "./components/portfolio";
 @import "./components/page-footer";
 @import "./components/address";
 @import "./components/form-subscribe";
