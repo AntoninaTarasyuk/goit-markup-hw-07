@@ -22,7 +22,8 @@
   &:focus {
     color: $accent-color;
   }
-}
-.btn-close__icon {
-  fill: currentColor;
+
+  &__icon {
+    fill: currentColor;
+  }
 }
