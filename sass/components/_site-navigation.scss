@@ -3,6 +3,7 @@
   align-items: center;
 }
 .site-nav__list {
+  @extend %list;
   margin-left: 93px;
 }
 .site-nav__item:not(:first-child) {

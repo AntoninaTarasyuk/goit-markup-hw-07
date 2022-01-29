@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 @import "./base/modern-normalize";
 @import "./utils/variables";
-@import "./utils/list";
+@import "./utils/placeholders";
 @import "./components/body";
 @import "./components/section";
 @import "./components/conteiner";
@@ -9,7 +10,7 @@
 @import "./components/button-main";
 @import "./components/button";
 @import "./components/social-links";
-@import "./components/page-header";
+@import "./components/header";
 @import "./components/site-navigation";
 @import "./components/contacts";
 @import "./components/hero";
@@ -18,10 +19,9 @@
 @import "./components/our-team";
 @import "./components/clients";
 @import "./components/portfolio";
-@import "./components/page-footer";
+@import "./components/footer";
 @import "./components/address";
 @import "./components/form-subscribe";
 @import "./components/modal";
 @import "./components/form-modal";
 @import "./components/button-close";
-@import "./components/agreement-checkbox";

@@ -1,4 +1,5 @@
 .contacts {
+  @extend %list;
   margin-left: auto;
 }
 .contacts__item:not(:first-child) {

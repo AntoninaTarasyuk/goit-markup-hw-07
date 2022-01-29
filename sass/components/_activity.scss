@@ -1,3 +1,6 @@
+.activity {
+  @extend %list;
+}
 .activity__item {
   position: relative;
 
