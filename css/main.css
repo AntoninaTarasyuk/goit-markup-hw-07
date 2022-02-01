@@ -285,7 +285,7 @@ summary {
 .section--features {
   padding-bottom: 0;
 }
-.section--our-team {
+.section--secondary-bg-color {
   background-color: #f5f4fa;
 }
 
@@ -387,7 +387,7 @@ summary {
 .btn-main:hover, .btn-main:focus {
   background-color: #188ce8;
 }
-.btn-main--subscribe-form {
+.btn-main--with-icon {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -838,7 +838,7 @@ summary {
 .address__link:hover, .address__link:focus {
   color: #2196f3;
 }
-.address__link--contact {
+.address__link--wiht-transparency {
   color: rgba(255, 255, 255, 0.6);
 }
 
